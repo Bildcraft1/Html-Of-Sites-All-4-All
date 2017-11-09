@@ -1,0 +1,88 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.css">
+	<link rel="stylesheet" href="style.css">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+	<header class="header clearfix">
+		<a href="index.html" class="header__logo">Logo</a>
+		<a href="" class="header__icon-bar">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<ul class="header__menu animate">
+			<li class="header__menu__item"><a href="http://utopystore.buycraft.net">Shop</a></li>
+			<li class="header__menu__item"><a href="https://sites.google.com/view/utopynetwork/home">Regole</a></li>
+			<li class="header__menu__item"><a href="forum.html">Forum</a></li>
+			<li class="header__menu__item"><a href="Staff.html">Staff</a></li>
+		</ul>
+	</header>
+
+	<section class="cover">
+		<div class="cover__filter"></div>
+		<div class="cover__caption">
+			<div class="cover__caption__copy">
+				<h1>UtopyNetwork </h1>
+				<h2>Benvenuto In Utopy Network</h2>
+				<a href="" class="button"> Entra sul nostro server</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="cards clearfix">
+		<div class="card">
+			<img class="card__image"src="https://i.ytimg.com/vi/Q4K-KQzy9CE/maxresdefault.jpg">
+			<div class="card__copy">
+				<h3>Prison</h3>
+				<p>Minare e diventato il tuo lavoro? Allora Vieni nel nostro prison. Scava per Minare </p>
+			</div>
+		</div>
+		<div class="card">
+			<img class="card__image"src="https://picload.org/image/wrdrlli/2016-01-04_17.19.45.png">
+			<div class="card__copy">
+				<h3>BedWars</h3>
+				<p>BedWars Online Con Letti Ancora piu belli. Entra per vedere il nostro lavoro </p>
+			</div>
+		</div>
+		<div class="card">
+			<img class="card__image"src="https://i.ytimg.com/vi/zrrAWp1EhQE/maxresdefault.jpg">
+			<div class="card__copy">
+				<h3>Murder</h3>
+				<p>Scappa dall'assasino prima che ti riesca a prender per assasinarti </p>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+<footer class="footer">
+	<p>Copyright-ItalianoMedio-UtopyNetwork</p>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+	 $(document).ready(function(){
+
+			$(".header__icon-bar").click(function(e){
+
+				$(".header__menu").toggleClass('is-open');
+				e.preventDefault();
+
+			});
+	 });
+</script>
+
+
+</body>
+</html>
